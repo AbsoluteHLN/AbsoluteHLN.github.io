@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>AntiDispona个人主页</title>
+        <meta name="description" content="AbsoluteHLN 的个人主页">
+        <title>AbsoluteHLN个人主页</title>
         <!-- 引入Bootstrap icon图标库 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
         <!-- CSS文件 -->
@@ -12,67 +13,71 @@
     <body>
         <div id="main-box">
             <div id="head">
-                <img id="touxiang" src="">
-                <p id="nick">AntiDispona</p>
-                <p id="info">我是巨b（你可以换成你想要的话）</p>
+                <!-- 头像：换成自己的图片就改这里的 src，建议用正方形图片 -->
+                <img id="touxiang" src="bg/profile.jpg" alt="头像">
+                <p id="nick">AbsoluteHLN</p>
+                <p id="info">来自过去之人</p>
             </div>
-            <div id="main-1">
-                <p class="title">[ 工程项目 ]</p>
-                <p class="kapian">
-                    <a href="https://github.com/AbsoluteHLN/AbsoluteHLN.github.io" target="_blank" style="color: #000;">
-                        <span class="kapian-title"><i class="bi bi-github"></i> Github网站</span>
-                    </a>
-                </p>
-                <p class="kapian">
-                    <a href="#" target="_blank" style="color: #000;">
-                        <span class="kapian-title"><i class="bi bi-github"></i>Skript</span>
-                    </a>
-                </p>
-            </div>
-            <div id="main-2">
-                <p class="main-2-text">
-                    <i class="bi bi-gender-male" style="color: blue;"></i>
-                    性别：男</p>
-                <p class="main-2-text">
-                    <i class="bi bi-activity" style="color: #ff3d00;"></i>
-                    年龄：16</p>
-                <p class="main-2-text">
-                    <i class="bi bi-geo-alt-fill" style="color: #304ffe;"></i>
-                    出生于：芜湖</p>
-                <p class="main-2-text">
-                    <i class="bi bi-app-indicator" style="color: #dd2c00;"></i>
-                    状态：学生（<span style="color: red;">巨B</span>）
-                </p>
-                <p class="main-2-text">
-                    <i class="bi bi-chat-dots-fill" style="color: #00c853;"></i>
-                    QQ：<a href="" target="_blank">我不知道，自己填</a>
-                </p>
-                <p class="main-2-text">
-                    <i class="bi bi-envelope"></i>
-                    Email：<a href="" target="_blank">自己填</a>
-                </p>
-                <p class="main-2-text">
-                    <i class="bi bi-envelope"></i>
-                    Bili：<a href="" target="_blank">AntiDispona</a>
-                </p>
-            </div>
-            <div id="main-3">
-                <p class="title">[ 个人网站 ]</p>
-                <p class="kapian" style="background: url(img/boke.jpg) center;">
-                    <a href="" target="_blank" style="color: #000;">
-                        <span class="kapian-title"><i class="bi bi-journal-richtext"></i> 博客</span>
-                    </a>
-                </p>
-                <p class="kapian" style="background: url(img/i.jpg) center;">
-                    <a href="#" target="_blank" style="color: #000;">
-                        <span class="kapian-title"><i class="bi bi-heart"></i> 爱情小站</span>
-                    </a>
-                </p>
+            <!-- 三栏包在一个弹性盒子里，原来的浮动会挤到换行，现在不会了 -->
+            <div id="main-row">
+                <div id="main-1">
+                    <p class="title">[ 工程项目 ]</p>
+                    <p class="kapian">
+                        <a href="https://github.com/AbsoluteHLN/AbsoluteHLN.github.io" target="_blank" rel="noopener">
+                            <span class="kapian-title"><i class="bi bi-github"></i> Github网站</span>
+                        </a>
+                    </p>
+                    <p class="kapian">
+                        <a href="#" target="_blank" rel="noopener">
+                            <span class="kapian-title"><i class="bi bi-github"></i> Skript</span>
+                        </a>
+                    </p>
+                </div>
+                <div id="main-2">
+                    <p class="main-2-text">
+                        <i class="bi bi-gender-male" style="color: blue;"></i>
+                        性别：男</p>
+                    <p class="main-2-text">
+                        <i class="bi bi-activity" style="color: #ff3d00;"></i>
+                        年龄：16</p>
+                    <p class="main-2-text">
+                        <i class="bi bi-geo-alt-fill" style="color: #304ffe;"></i>
+                        出生于：芜湖</p>
+                    <p class="main-2-text">
+                        <i class="bi bi-app-indicator" style="color: #dd2c00;"></i>
+                        状态：学生
+                    </p>
+                    <p class="main-2-text">
+                        <i class="bi bi-chat-dots-fill" style="color: #00c853;"></i>
+                        QQ：<a href="https://wpa.qq.com/msgrd?v=3&amp;uin=1963564158&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener">1963564158</a>
+                    </p>
+                    <p class="main-2-text">
+                        <i class="bi bi-envelope"></i>
+                        Email：-
+                    </p>
+                    <p class="main-2-text">
+                        <i class="bi bi-play-circle-fill" style="color: #00a1d6;"></i>
+                        Bilibili：<a href="https://space.bilibili.com/491754632?spm_id_from=333.337.0.0" target="_blank" rel="noopener">Kalcirite</a>
+                    </p>
+                </div>
+                <div id="main-3">
+                    <p class="title">[ 个人网站 ]</p>
+                    <!-- 想给卡片加背景图：把 style="..." 换成 style="background: url(../bg/xxx.jpg) center / cover;" -->
+                    <p class="kapian">
+                        <a href="html/blog.html">
+                            <span class="kapian-title"><i class="bi bi-journal-richtext"></i> 博客</span>
+                        </a>
+                    </p>
+                    <p class="kapian">
+                        <a href="#" target="_blank" rel="noopener">
+                            <span class="kapian-title"><i class="bi bi-heart"></i> 爱情小站</span>
+                        </a>
+                    </p>
+                </div>
             </div>
             <div id="footer">
-                &copy;2023 AntiDispona&nbsp;&&nbsp;<a href="https://avicii922.github.io" target="_blank">Avicii922</a>&nbsp;All&nbsp; Rights&nbsp; Served
+                &copy;2023 AbsoluteHLN&nbsp;&&nbsp;<a href="https://avicii922.github.io" target="_blank" rel="noopener">Avicii922</a>&nbsp;All&nbsp; Rights&nbsp; Served
             </div>
         </div>
     </body>
 </html>
-

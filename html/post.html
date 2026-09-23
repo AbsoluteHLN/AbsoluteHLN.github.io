@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="AbsoluteHLN 的博客文章">
+        <title>示例文章 - AbsoluteHLN</title>
+        <!-- 引入Bootstrap icon图标库 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <!-- 通用样式（新拟态风格都在这里） -->
+        <link rel="stylesheet" href="../style/style.css">
+        <!-- 博客页专属样式 -->
+        <link rel="stylesheet" href="../style/blog.css">
+    </head>
+    <body>
+        <div id="main-box">
+            <div class="page-head">
+                <a class="back-link" href="blog.html"><i class="bi bi-arrow-left"></i> 返回博客</a>
+                <p class="page-title">示例文章：把这篇换成你的第一篇</p>
+                <p class="page-sub">
+                    <i class="bi bi-calendar3"></i> 2023-01-01
+                    <span class="dot">·</span>
+                    <i class="bi bi-tag"></i> 随笔
+                </p>
+            </div>
+
+            <!-- ===== 正文从这里开始写 ===== -->
+            <div class="article">
+                <p>这里是正文第一段。整页文字都可以直接选中复制，写多少页面就自动撑多高，不会像原来的主页那样写死了高度。</p>
+
+                <h2>小标题写 h2</h2>
+                <p>普通段落用 <code>&lt;p&gt;</code> 包起来就行。想强调可以写 <strong>加粗</strong> 或 <em>斜体</em>，想加链接就写
+                    <a href="https://github.com/AbsoluteHLN" target="_blank" rel="noopener">这样</a>。</p>
+
+                <h3>再小一级用 h3</h3>
+                <ul>
+                    <li>列表第一项</li>
+                    <li>列表第二项</li>
+                    <li>列表第三项</li>
+                </ul>
+
+                <blockquote>引用、摘录一段话可以放在 blockquote 里，左边会有一条蓝色竖线。</blockquote>
+
+                <p>贴代码用 <code>&lt;pre&gt;&lt;code&gt;</code>：</p>
+                <pre><code>on load:
+    send "&amp;6Hello, world!" to player</code></pre>
+
+                <hr>
+
+                <p>插入图片：把图片丢进项目里的 <code>bg/</code> 目录，然后写
+                    <code>&lt;img src="../bg/图片名.jpg" alt="说明"&gt;</code>，宽度会自动适配。</p>
+
+                <!-- 图片示例（取消注释并换成自己的图片就能用）
+                <img src="../bg/DSP.jpg" alt="配图">
+                -->
+            </div>
+            <!-- ===== 正文写到这里结束 ===== -->
+
+            <div class="article-nav">
+                <a href="blog.html"><i class="bi bi-arrow-left"></i> 上一篇</a>
+                <a href="blog.html">下一篇 <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div id="footer">
+                &copy;2023 AbsoluteHLN&nbsp;&&nbsp;<a href="https://avicii922.github.io" target="_blank" rel="noopener">Avicii922</a>&nbsp;All&nbsp; Rights&nbsp; Served
+            </div>
+        </div>
+    </body>
+</html>

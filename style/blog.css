@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* ==========================================================
+   博客页专用样式（html/blog.html 列表页 + html/post.html 文章页）
+   依赖 style/style.css：配色、阴影、圆角全部复用其中的 :root 变量，
+   所以博客页和主页的新拟态风格完全一致。
+   ========================================================== */
+
+/* ===== 顶部标题栏（复用主页 #head 的凹陷面板） ===== */
+.page-head{
+    padding: 20px 24px 22px;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-in);
+}
+
+/* 返回主页 / 返回列表 的小按钮 */
+.back-link{
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-out-sm);
+    font-size: 14px;
+    color: var(--text-sub);
+    transition: box-shadow 0.3s, color 0.3s;
+}
+.back-link:hover{
+    color: var(--accent);
+    box-shadow: #616161 0 2px 8px;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.page-sub{
+    margin-top: 6px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-sub);
+}
+
+/* ===== 文章列表 ===== */
+.post-list{
+    margin-top: 30px;
+}
+
+.post{
+    margin-bottom: 20px;
+    padding: 22px 24px;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-in);
+    transition: box-shadow 0.35s, transform 0.35s;
+}
+.post:hover{
+    box-shadow: var(--shadow-out-sm);
+    transform: translate(0, -3px);
+}
+/* 列表里的文章文字允许选中复制 */
+.post,
+.post *{
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+.post-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.post-title a{
+    color: var(--text-main);
+}
+.post-title a:hover{
+    color: var(--accent);
+}
+
+/* 日期 / 标签 这一行 */
+.post-meta{
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--text-sub);
+}
+.post-meta i{
+    margin-right: 4px;
+}
+.post-meta .dot{
+    margin: 0 8px;
+    color: #bbb;
+}
+
+.post-excerpt{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-sub);
+}
+
+.post-more{
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--accent);
+}
+.post-more:hover{
+    color: var(--accent-hover);
+}
+
+/* 没有文章时的占位提示 */
+.post-empty{
+    padding: 40px 24px;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-in);
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-sub);
+}
+
+/* ===== 文章正文页 ===== */
+.article{
+    margin-top: 30px;
+    padding: 30px 32px;
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-in);
+    /* 正文要能选中、复制 */
+    user-select: text;
+    -webkit-user-select: text;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--text-main);
+}
+
+.article h1,
+.article h2,
+.article h3{
+    margin: 1.4em 0 0.6em;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.article h1{ font-size: 26px; }
+.article h2{ font-size: 21px; }
+.article h3{ font-size: 18px; }
+.article > :first-child{ margin-top: 0; }
+
+.article p{
+    margin: 0.9em 0;
+}
+.article ul,
+.article ol{
+    margin: 0.9em 0;
+    padding-left: 1.6em;
+}
+.article li{
+    margin: 0.35em 0;
+}
+.article a{
+    border-bottom: 1px solid rgba(3, 169, 244, 0.4);
+}
+.article img{
+    display: block;
+    max-width: 100%;
+    margin: 1.2em auto;
+    border-radius: var(--radius-sm);
+}
+.article hr{
+    margin: 1.8em 0;
+    height: 1px;
+    border: 0;
+    background: #cfcfcf;
+}
+.article blockquote{
+    margin: 1.1em 0;
+    padding: 10px 18px;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-sub);
+}
+.article code{
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.06);
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.92em;
+}
+.article pre{
+    margin: 1.1em 0;
+    padding: 16px 18px;
+    overflow-x: auto;
+    border-radius: var(--radius-sm);
+    background: #d9d9d9;
+    box-shadow: var(--shadow-in);
+}
+.article pre code{
+    padding: 0;
+    background: none;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* 文末的上一篇 / 下一篇 */
+.article-nav{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+/* ===== 手机端微调 ===== */
+@media only screen and (max-width: 639px) {
+    .page-head{
+        padding: 18px 18px 20px;
+    }
+    .page-title{
+        font-size: 24px;
+    }
+    .post{
+        padding: 18px;
+    }
+    .article{
+        padding: 22px 20px;
+        font-size: 15px;
+    }
+    .article h1{ font-size: 22px; }
+    .article h2{ font-size: 19px; }
+}
